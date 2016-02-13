@@ -35,11 +35,11 @@ public class First_activity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.Simple) {
-            Intent nowyEkran = new Intent(this, Simple_activity.class);
-            startActivity(nowyEkran);
+            Intent newScreen = new Intent(this, Simple_activity.class);
+            startActivity(newScreen);
         } else if (v.getId() == R.id.Advenced) {
-            Intent nowyEkran = new Intent(this, Advenced_activity.class);
-            startActivity(nowyEkran);
+            Intent newScreen = new Intent(this, Advenced_activity.class);
+            startActivity(newScreen);
         } else if (v.getId() == R.id.Dialog) {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                     context);

@@ -18,43 +18,43 @@ public class Advenced_activity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advenced);
-        Button Jeden = (Button) findViewById(R.id.b1);
-        Button Dwa = (Button) findViewById(R.id.b2);
-        Button Trzy = (Button) findViewById(R.id.b3);
-        Button Cztery= (Button) findViewById(R.id.b4);
-        Button Piec = (Button) findViewById(R.id.b5);
-        Button Szesc = (Button) findViewById(R.id.b6);
-        Button Siedem = (Button) findViewById(R.id.b7);
-        Button Osiem = (Button) findViewById(R.id.b8);
-        Button Dziewiec = (Button) findViewById(R.id.b9);
+        Button One = (Button) findViewById(R.id.b1);
+        Button Two = (Button) findViewById(R.id.b2);
+        Button Three = (Button) findViewById(R.id.b3);
+        Button Four = (Button) findViewById(R.id.b4);
+        Button Five = (Button) findViewById(R.id.b5);
+        Button Six = (Button) findViewById(R.id.b6);
+        Button Seven = (Button) findViewById(R.id.b7);
+        Button Eight = (Button) findViewById(R.id.b8);
+        Button Nine = (Button) findViewById(R.id.b9);
         Button Zero = (Button) findViewById(R.id.b0);
-        Button Kwadrat = (Button) findViewById(R.id.Squre);
-        Button Procent = (Button) findViewById(R.id.Percent);
-        Button Pierwisatek = (Button) findViewById(R.id.Root);
-        Button Wynik = (Button) findViewById(R.id.Score);
-        Button Kropka = (Button) findViewById(R.id.Dot);
-        Button Cofnij = (Button) findViewById(R.id.Prev);
-        Button Czysc = (Button) findViewById(R.id.Clear);
+        Button Square = (Button) findViewById(R.id.Square);
+        Button Percent = (Button) findViewById(R.id.Percent);
+        Button Root = (Button) findViewById(R.id.Root);
+        Button Score = (Button) findViewById(R.id.Score);
+        Button Dot = (Button) findViewById(R.id.Dot);
+        Button Prev = (Button) findViewById(R.id.Prev);
+        Button Clear = (Button) findViewById(R.id.Clear);
         Button PlusMinus= (Button) findViewById(R.id.PlusMinus);
         Display = (TextView) findViewById(R.id.textView);
 
-        Jeden.setOnClickListener(this);
-        Dwa.setOnClickListener(this);
-        Trzy.setOnClickListener(this);
-        Cztery.setOnClickListener(this);
-        Piec.setOnClickListener(this);
-        Szesc.setOnClickListener(this);
-        Siedem.setOnClickListener(this);
-        Osiem.setOnClickListener(this);
-        Dziewiec.setOnClickListener(this);
+        One.setOnClickListener(this);
+        Two.setOnClickListener(this);
+        Three.setOnClickListener(this);
+        Four.setOnClickListener(this);
+        Five.setOnClickListener(this);
+        Six.setOnClickListener(this);
+        Seven.setOnClickListener(this);
+        Eight.setOnClickListener(this);
+        Nine.setOnClickListener(this);
         Zero.setOnClickListener(this);
-        Pierwisatek.setOnClickListener(this);
-        Procent.setOnClickListener(this);
-        Kwadrat.setOnClickListener(this);
-        Wynik.setOnClickListener(this);
-        Kropka.setOnClickListener(this);
-        Cofnij.setOnClickListener(this);
-        Czysc.setOnClickListener(this);
+        Root.setOnClickListener(this);
+        Percent.setOnClickListener(this);
+        Square.setOnClickListener(this);
+        Score.setOnClickListener(this);
+        Dot.setOnClickListener(this);
+        Prev.setOnClickListener(this);
+        Clear.setOnClickListener(this);
         PlusMinus.setOnClickListener(this);
     }
     public void ShowNum(String num){
@@ -144,7 +144,7 @@ public class Advenced_activity extends AppCompatActivity implements View.OnClick
             total = newNumber * (-1);
             Display.setText(total.toString());
         }
-        else if(v.getId()==R.id.Squre){
+        else if(v.getId()==R.id.Square){
             Double newNumber = Double.parseDouble(Display.getText().toString());
             total = Math.pow(newNumber,2);
             Display.setText(total.toString());
